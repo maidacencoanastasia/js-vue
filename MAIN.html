@@ -35,6 +35,10 @@
                 ({{ i + 1 }}) {{ toUpperCase(myNote) }}
                 <button class="btn danger" @click="removeNote(i)">X</button>
             </li>
+            <hr/>
+            <li>
+                <strong>Total notes: {{ notes.length }}</strong>
+            </li>
         </ul>
         <div v-else>You have no notes. Add something in the list</div>
     </div>
