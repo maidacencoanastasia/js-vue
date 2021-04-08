@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>08.04.2021</title>
+</head>
+<body>
+<div id="app" style="border: 1px solid gray">
+    <input type="number" v-model="a"/>
+    <select v-model="operator">
+        <option v-for=" col of operation" >{{ col }}</option>
+    </select>
+    <input type="number" v-model="b"/>
+    =
+    <div v-if="operation === '+'" >{{ suma }}</div>
+    <div v-if="operation === '-'" >{{ scadere }}</div>
+    <div v-if="operation === '*'" >{{ imultire }}</div>
+    <div v-if="operation === '/'" >{{ devide }}</div>
+    <div class="alert alert-info" role="alert">
+        <h4 v-cloak>Результат вычисления: {{ a }} {{operator}} {{ b }} = {{result}}</h4>
+    </div>
+
+
+</div>
+<script src="https://unpkg.com/vue@next"></script>
+<script src="src/app.js"></script>
+</body>
+</html>
