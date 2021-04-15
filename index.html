@@ -33,3 +33,10 @@
 <script src="src/app.js"></script>
 </body>
 </html>
+
+
+let currentDate = new Date();
+let birthDate = inputValue;
+let difference = currentDate - birthDate;
+let age = Math.floor(difference/31557600000);
+return age

@@ -9,6 +9,7 @@ const App ={
 const  app = Vue.createApp(App)
 app.mount('#app')
 
+
 const App2 ={
     data(){
         return{
